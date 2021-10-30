@@ -1,0 +1,7 @@
+<3>Task form </3>
+<a href='{% url "tasks" %}'>Go back</a>
+<from method='POST'action = ''>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="bnt bnt-success" type="submit">Добавить</button>
+</from>
